@@ -304,6 +304,25 @@ hr{
   transform: translate(-40%,110%);
   
 } 
+button{
+  margin-top: 5vh;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  width: clamp(185px, 50%, 500px);
+  align-self: center;
+  justify-self: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 200ms;
+}
+button:hover{
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
  .progress-bar > p::before{
   content: '';
   position: absolute;

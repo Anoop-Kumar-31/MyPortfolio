@@ -8,7 +8,7 @@ export default function Nav(){
             <ul>
             <li><a href="#mySection">About</a></li>
             <li><a href="#skillsSection">Skills</a></li>
-            <li>Projects</li>
+            <li><a href="#projectSection">Projects</a></li>
             <li>Contact</li>
             </ul>
         </nav>
