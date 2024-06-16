@@ -34,7 +34,7 @@ export default function Skills() {
             <section >
                 {skills.map((instance, index) =>
                     <div key={index} id={`skill-${index}`} ref={el => skillRefs.current
-                    [index] = el} style={{ width: 'clamp(200px,80%,720px)' }} >
+                    [index] = el} className='skillbox' >
                         <h1 >{instance.name}</h1>
                         <p className='description' style={{marginBottom:'8px'}}>{instance.des}</p>
                         <div id="progressDiv">
