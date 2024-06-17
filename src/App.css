@@ -26,10 +26,10 @@
   --text-color: #2F4F4F; */
 
   /* Dark Purple and Mint Green */
-  /* --primary-color: #4B0082;
+  --primary-color: #300053;
   --accent-color: #98FF98;
   --background-color: #FFFFF0;
-  --text-color: #000000; */
+  --text-color: #000000;
 
   /* Charcoal and Turquoise */
   --primary-color: #36454F;
@@ -178,6 +178,7 @@ b{
   font-size: xx-large;
 }
 @media screen and (min-width:501px) and ( max-width:1000px) {
+  
   .front{
     padding: 5vh 2vw;
     flex-direction: column;
@@ -194,6 +195,10 @@ b{
       }
     }
   }
+  .half>div{
+    display: flex;
+    justify-content: center;
+  }
   .half>h1{
     text-align: center;
     margin-bottom: 30px;
@@ -205,8 +210,15 @@ b{
       color:var(--primary-color) !important;
     }
   }
+  .themes{
+    margin-left: 0 !important;
+    transform: translateX(-19%)!important;
+    margin-bottom: 30px;
+  }
   nav{
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 0 !important;
     div{
       transform: translate(0) !important;
@@ -399,6 +411,7 @@ icons>img{
 }
 
 @media screen and (max-width:500px) {
+  
   .front{
     flex-direction: column;
     margin-bottom: 0.5vh;
@@ -414,6 +427,13 @@ icons>img{
         width: 100%;
         align-self: center;
       }
+    }
+  }
+  .half>div{
+    display: flex;
+    justify-content: center;
+    b{
+      text-align: center !important;
     }
   }
   .half>h1{
@@ -433,10 +453,17 @@ icons>img{
   .skillbox{
     width: clamp(200px,95%,720px) !important; 
   }
+  .themes{
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
   nav{
-    flex-direction: column-reverse;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
+    display: grid;
+    /* flex-direction: column !important; */
+    /* margin-bottom: 0 !important; */
+    /* align-items: center; */
+    justify-content: center;
+    /* padding-bottom: 0 !important; */
     div{
       transform: translate(0) !important;
       text-align: center ;
@@ -479,4 +506,55 @@ icons>img{
 }
 .skillbox{
   width: clamp(200px,80%,720px); 
+}
+
+
+
+
+
+/* _________________________________________________________________Yuvjeet Code______________________________________________________________*/
+.Handwave {
+  animation-name: HandWave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes HandWave-animation {
+    0% { transform: rotate(0.0deg); }
+   10% { transform: rotate(14.0deg); }
+   20% { transform: rotate(-8.0deg); }
+   30% { transform: rotate(14.0deg); }
+   40% { transform: rotate(-4.0deg); }
+   50% { transform: rotate(10.0deg); }
+   60% { transform: rotate(0.0deg); }
+  100% { transform: rotate(0.0deg); }
+}
+.themes{
+  position: relative;
+  z-index: 999;
+  margin-left: 4%;
+  display: flex;
+  button{
+    margin-left: 8%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .number0{
+    background:linear-gradient(45deg,#4B0082,#98FF98);
+  }
+  .number1{
+    background:linear-gradient(45deg,#001F3F,#ff9f4b);
+  }
+  .number2{
+    background:linear-gradient(45deg,#008080,#FF7F50);
+  }
+  .number3{
+    background:linear-gradient(45deg,#4169E1,#FFD700);
+  }
+  .number4{
+    background:linear-gradient(45deg,#36454F,#40E0D0);
+  }
 }

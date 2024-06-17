@@ -3,7 +3,10 @@ import logo from '../img/logo2.png'
 export default function Front(){
     return(
         <div class="front" >
-            <section className='half' style={{marginTop:'5vh'}}>
+            <section className='half' style={{transform:'translateY(-50px)'}} >
+                <div style={{marginBottom:'3vh'}}>
+                    <b style={{fontSize:'60px',}}>Anoop Kumar  </b> 
+                </div>
                 <h1 style={{fontSize:'5vh'}}>About Me !</h1>
                 <p style={{marginTop:'4px',lineHeight:'1.3'}}>
                 <b style={{fontSize:'20px'}}>Degree:</b> Bachelor of Engineering<br/>
