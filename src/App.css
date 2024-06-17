@@ -454,7 +454,7 @@ icons>img{
     width: clamp(200px,95%,720px) !important; 
   }
   .themes{
-    margin-left: -10px !important;
+    margin-left: -15px !important;
     margin-bottom: 30px;
   }
   nav{
