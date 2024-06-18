@@ -456,10 +456,15 @@ icons>img{
   }
   .themes{
     margin-left: -15px !important;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    button{
+      margin-top: 10px !important;
+    }
   }
   nav{
     display: grid;
+    margin-top: 0;
+    padding-top: 0;
     /* flex-direction: column !important; */
     /* margin-bottom: 0 !important; */
     /* align-items: center; */
