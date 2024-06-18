@@ -63,7 +63,7 @@ export default function Themes() {
           primaryColor: "#001F3F",
           accentColor: "#FF851B",
           backgroundColor: "#FFFFFF",
-          textColor: "#000000",
+          textColor: "#bfbfbf",
         });
         break;
       case "TC":
@@ -79,7 +79,7 @@ export default function Themes() {
           primaryColor: "#300053",
           accentColor: "#98FF98",
           backgroundColor: "#FFFFF0",
-          textColor: "#000000",
+          textColor: "#bfbfbf",
         });
         break;
       default:

@@ -14,10 +14,10 @@
     --text-color: #333333;  */
 
   /* Navy Blue and Orange----------------------- */
-    /* --primary-color: #001F3F;
+    --primary-color: #001F3F;
     --accent-color: #FF851B;
     --background-color: #FFFFFF;
-    --text-color: #000000; */
+    --text-color: #1c2400;
 
   /* Teal and Coral ----------------------------*/
   /* --primary-color: #008080;
@@ -29,7 +29,7 @@
   --primary-color: #300053;
   --accent-color: #98FF98;
   --background-color: #FFFFF0;
-  --text-color: #000000;
+  --text-color: #bfbfbf;
 
   /* Charcoal and Turquoise */
   --primary-color: #36454F;
@@ -271,7 +271,7 @@ b{
       h1{
         width: 100%;
         height:auto;
-        color: var(--primary-color);
+        color: var(--primary-color) !important;
         text-shadow: var(--accent-color) 1px 1px 1px;
       }
       div{
@@ -392,6 +392,7 @@ child>div{
 info{
   padding: 0px 50px;
   h1{
+    color:var(--primary-color) !important;
     text-shadow: var(--accent-color) 1px 1px 1px;
     line-height: 34px;
     margin-bottom: 3%;
@@ -446,7 +447,7 @@ icons>img{
     width: 100% !important;
     div{
       h1{
-        color:var(--accentcolor) !important;
+        color:var(--primary-color) !important;
       }
     }
   }
