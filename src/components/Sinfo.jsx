@@ -16,7 +16,7 @@ const skills=[{
 {
     name:'REACT',
     des:'I leverage modern web development techniques like component-based architectures, virtual DOM for efficient updates, and client-side routing for seamless navigation. My experience with external styling frameworks ensures clean separation of concerns and maintainability. This comprehensive skillset allows me to create dynamic and reusable code, fostering a smooth user experience.',
-    progress:'80'
+    progress:'85'
 },
 {
     name:'EXPRESS',
@@ -41,7 +41,7 @@ const skills=[{
 {
     name:'NEXT',
     des:'I\'m adept at building dynamic and performant web applications using Next.js, a powerful React framework. My expertise extends beyond client-side rendering to include utilizing features like server-side rendering and static site generation for optimal SEO and user experience. I leverage Next.js\'s routing capabilities for seamless navigation and its built-in data fetching for efficient content management. This comprehensive skillset allows me to create modern, scalable, and SEO-friendly web applications.',
-    progress:'51'
+    progress:'75'
 },
 {
     name:'PYTHON',
