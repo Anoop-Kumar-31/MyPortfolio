@@ -10,7 +10,7 @@ const projects=[
         des:'AutoBack is a advertising website which is to promote the service provided by company, the product is based in automatic feedback and its logging system. The website is designed to be user-friendly and easy to navigate, with a clean and modern aesthetic. The website is responsive and mobile-friendly, ensuring that it looks great on all devices. The website is built using HTML, CSS, and JavaScript, with a focus on clean code and best practices.',
         image:`${img2}`,
         icons:[react],
-        link:'https://myportfolio-kto7.onrender.com'
+        link:'https://autoback-7van.onrender.com'
     },
     {
         name:'Real-Time Blood Management System',
