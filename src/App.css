@@ -429,7 +429,7 @@ icons>img{
     position: absolute;
     left: 20% !important;
     width: 70% !important;
-    bottom:2vh !important; 
+    bottom:8vh !important; 
     animation: boats 3s ease-in-out infinite !important;
   }
   @keyframes boats {
