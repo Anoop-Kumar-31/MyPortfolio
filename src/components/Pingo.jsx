@@ -11,8 +11,7 @@ const projects=[
         image:`${img2}`,
         icons:[react],
         link:'https://autoback-7van.onrender.com'
-    },
-    {
+    },{
         name:'Real-Time Blood Management System',
         des:`The "Heartbeat" is a conceptual website designed to address the problem of blood availability. This platform aims to connect blood donors with recipients efficiently, minimizing the time needed to secure blood for patients in critical condition. By enabling real-time tracking and communication, the system showcases a potential solution for enhancing the speed and reliability of blood donation processes, ultimately aiming to save lives through improved access to necessary blood supplies. (not responsive for mobile screens)`,
         image:`${img1}`,

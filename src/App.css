@@ -14,10 +14,10 @@
     --text-color: #333333;  */
 
   /* Navy Blue and Orange----------------------- */
-    --primary-color: #001F3F;
+    /* --primary-color: #001F3F;
     --accent-color: #FF851B;
     --background-color: #FFFFFF;
-    --text-color: #1c2400;
+    --text-color: #1c2400; */
 
   /* Teal and Coral ----------------------------*/
   /* --primary-color: #008080;
@@ -26,10 +26,10 @@
   --text-color: #2F4F4F; */
 
   /* Dark Purple and Mint Green */
-  --primary-color: #300053;
+  /* --primary-color: #300053;
   --accent-color: #98FF98;
   --background-color: #FFFFF0;
-  --text-color: #bfbfbf;
+  --text-color: #bfbfbf; */
 
   /* Charcoal and Turquoise */
   --primary-color: #36454F;
@@ -563,4 +563,70 @@ icons>img{
   .number4{
     background:linear-gradient(45deg,#36454F,#40E0D0);
   }
+}
+
+.loadingbackground{
+  background-color: var(--primary-color);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  animation: myanimation 3s ease-in-out;
+  z-index: 9999999999;
+}
+.box{
+  position: absolute;
+  bottom:0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9999999999;
+  color: var(--text-color);
+  background-color: var(--text-color);
+  transform: translate(0,100vh);
+}
+.wave11{
+  animation: waves1 5s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom:0;
+}
+.wave22{
+  animation: waves2 2s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: 200ms;
+  bottom:5px;
+}
+.wave33{
+  animation: waves3 3s linear infinite reverse;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: 100ms;
+  bottom:5px;
+}
+.wave44{
+  animation: waves3 2s linear infinite;
+  z-index: 997;
+  opacity: 0.8;
+  animation-delay: 300ms;
+  bottom:10px;
+}
+.wave{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 12vh;
+  background: url(img/wave.png);
+  background-size: 1500px 100px;
+}
+
+@keyframes myanimation {
+  0%{transform: translateY(0);}
+  10%{transform: translateY(0);}
+  20%{transform: translateY(-10vh);}
+  80%{transform: translateY(-100vh);
+  filter: opacity(1);}
+  100%{transform: translateY(-100vh);
+  filter : opacity(0);}
 }
