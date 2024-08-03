@@ -178,12 +178,19 @@ b{
   font-size: xx-large;
 }
 @media screen and (min-width:501px) and ( max-width:1000px) {
+  
+  .wave{
+    transform: translateY(10%) !important;
+  }
   .loadingbackground>img{
     position: absolute;
     left: 20% !important;
     width: 60% !important;
     bottom: -3vh !important; 
     animation: boats 3s ease-in-out infinite !important;
+  }
+  .wave{
+    transform: translateY(10%) !important;
   }
   @keyframes boats {
     /* 0%{transform: translate(0,0) ;} */
@@ -438,6 +445,10 @@ icons>img{
     /* 40%{transform: translate(0,0) rotate(0deg);} */
     60%{transform: translate(0px,60px)  rotate(-8deg);}
     100%{transform: translate(0,0);}
+  }
+  
+  .wave{
+    transform: translateY(10%) !important;
   }
   .front{
     flex-direction: column;
