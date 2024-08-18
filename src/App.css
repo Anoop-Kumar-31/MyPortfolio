@@ -133,7 +133,7 @@ nav{
   }
   ul{
     list-style: none;
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     li{
       margin: 0 2vw ;
