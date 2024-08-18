@@ -14,7 +14,7 @@ export default function Front(){
             {visibleResume && 
                 <span id="resumePreview">
                     <div onClick={handleResumeClick}>X</div>
-                    <iframe title="MyResume" src="https://drive.google.com/file/d/1k56iPPt9Cvem7IzJsV-dtiZQ0BmnHtxE/preview"></iframe>
+                    <iframe title="MyResume" src="https://drive.google.com/file/d/1sSmfCqgDTbhG4Vk5QvqmiHIRWVWeRr-h/preview"></iframe>
                 </span>
             }
             <section id="aboutmeinfo" className='half' style={{transform:'translateY(-50px)'}} >
@@ -34,7 +34,7 @@ export default function Front(){
                         <MdFileOpen/>
                     </button>
                 {/* </a> */}
-                <a href="https://drive.google.com/uc?export=download&id=1k56iPPt9Cvem7IzJsV-dtiZQ0BmnHtxE">
+                <a href="https://drive.google.com/uc?export=download&id=1sSmfCqgDTbhG4Vk5QvqmiHIRWVWeRr-h">
                     <button>
                         Download Resume
                         <FaFileDownload/>
