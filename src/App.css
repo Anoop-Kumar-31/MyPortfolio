@@ -128,26 +128,27 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  b{
+  /* b{
     color: var(--accent-color) !important;
-  }
-  ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    li{
-      margin: 0 2vw ;
-      cursor: pointer;
-      transition: 200ms;
-    }
-    li:hover{
-      transform: scale(1.1);
-      color: var(--accent-color) !important;
-    }
-    a:hover{
-      color: var(--accent-color) !important ;
-    }
-  }
+  } */
+  
+}
+nav>ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+nav>ul>li{
+  margin: 0 2vw ;
+  cursor: pointer;
+  transition: 200ms;
+}
+nav>ul>li:hover{
+  transform: scale(1.1);
+  color: var(--accent-color) !important;
+}
+nav>ul>li>a:hover{
+  color: var(--accent-color) !important ;
 }
 .front{
   color: var(--background-color);
