@@ -177,6 +177,10 @@ b{
   font-weight: bolder;
   font-size: xx-large;
 }
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:501px) and ( max-width:1000px) {
   
   .wave{
@@ -275,6 +279,12 @@ b{
     }
   }
 }
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
 .skillsection{
   margin-top: 10vh;
   padding: 3vh 5vw;
@@ -431,6 +441,11 @@ icons>img{
   margin-left: 15px;
 }
 
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width:500px) {
   .loadingbackground>img{
     position: absolute;
@@ -551,29 +566,10 @@ icons>img{
   width: clamp(200px,80%,720px); 
 }
 
-
-
-
-
-/* _________________________________________________________________Yuvjeet Code______________________________________________________________*/
-.Handwave {
-  animation-name: HandWave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-@keyframes HandWave-animation {
-    0% { transform: rotate(0.0deg); }
-   10% { transform: rotate(14.0deg); }
-   20% { transform: rotate(-8.0deg); }
-   30% { transform: rotate(14.0deg); }
-   40% { transform: rotate(-4.0deg); }
-   50% { transform: rotate(10.0deg); }
-   60% { transform: rotate(0.0deg); }
-  100% { transform: rotate(0.0deg); }
-}
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
 .themes{
   position: relative;
   z-index: 999;
@@ -681,4 +677,122 @@ icons>img{
   /* 40%{transform: translate(0,0) rotate(0deg);} */
   60%{transform: translate(-150px,40px)  rotate(-5deg);}
   100%{transform: translate(0,0);}
+}
+
+
+.contact{
+  margin-top: 10vh;
+  padding: 3vh 5vw;
+  /* width: 50%; */
+  background-color: white;
+  color: rgb(81, 81, 81);
+}
+.detail{
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding-right: 33px;
+  }
+  div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h1{
+      font-size: larger;
+    }
+    p{
+      font-size: larger;
+    }
+  }
+}
+#myLinks{
+  button{
+    width: fit-content;
+    height: 40px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 20px;
+    svg{
+      transform: scale(2.2);
+    }
+  }
+  button:hover{
+    background-color: var(--wave1);
+    color: var(--primary-color);
+    transition: 500ms ease-in-out;
+    svg{
+      transform: scale(3.3) !important;
+      transition: 250ms ease-in-out;
+    }
+  }
+  #github:hover{
+    background-color: var(--wave1);
+    color: var(--primary-color);
+    transition: 500ms ease-in-out;
+    svg{
+      transform: scale(2.4) !important;
+      transition: 250ms ease-in-out;
+    }
+  }
+}
+#aboutmeinfo{
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    width: fit-content;
+    padding-right: 33px;
+    padding:10px 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    svg{
+      transition: 200ms ease-in-out;
+      transform:  scale(1.1);
+      padding-left: 10px;
+    }
+  }
+  button:hover{
+    background-color: var(--accent-color);
+    width: fit-content;
+    svg{
+      transform: scale(1.2);
+      padding-left: 10px;
+    }
+  }
+}
+#email{
+  svg{
+    /* transition: 50ms ease-in-out; */
+    /* transform:'translate(50%,15%) scale(1.2)' */
+    transform: translate(50%,15%) scale(1.2);
+  }
+}
+#email:hover{
+  svg{
+    /* transition: 50ms ease-in-out; */
+    /* transform:'translate(50%,15%) scale(1.2)' */
+    transform: translate(50%,15%) scale(1.45) !important;
+    }
+}
+#resumePreview{
+  position: absolute;
+  z-index: 9999999999;
+  div{
+    padding: 1% 2%;
+    color:white;
+    background-color: #2f2f2f;
+    border: #9a9a9a 2px solid;
+    width: fit-content;
+    transform: translate(0,100%);
+    cursor: pointer;
+  }
+  iframe{
+    cursor: move;
+    height: clamp(300px,65vh,480px);
+    width: clamp(400px,50vw,550px);
+  }
 }
