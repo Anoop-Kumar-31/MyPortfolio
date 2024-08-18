@@ -3,7 +3,7 @@ import img from '../img/boat.png';
 export default function Loading() {
     return (
         <div className="loadingbackground">
-            <img src={img}/>
+            <img src={img} alt='wave'/>
             <div className="loader">
                 <div className="wave wave11"></div>
                 <div className="wave wave22"></div>

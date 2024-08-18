@@ -7,6 +7,7 @@ export default function Skills() {
     const skillRefs = useRef([]);
 
     useEffect(() => {
+        const currentRefs = skillRefs.current;
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -17,15 +18,15 @@ export default function Skills() {
             });
         }, { threshold: 0.4 });
 
-        skillRefs.current.forEach(ref => {
+        currentRefs.forEach(ref => {
             if (ref) observer.observe(ref);
-        });
-
-        return () => {
-            skillRefs.current.forEach(ref => {
-                if (ref) observer.unobserve(ref);
+          });
+      
+          return () => {
+            currentRefs.forEach(ref => {
+              if (ref) observer.unobserve(ref);
             });
-        };
+          };
     }, []);
 
     return (
@@ -33,8 +34,7 @@ export default function Skills() {
             <b style={{ fontSize: '10vh' }}>Skills</b><hr /><br/>
             <section >
                 {skills.map((instance, index) =>
-                    <div key={index} id={`skill-${index}`} ref={el => skillRefs.current
-                    [index] = el} className='skillbox' >
+                    <div key={index} id={`skill-${index}`} ref={el => skillRefs.current[index] = el} className='skillbox' >
                         <h1 >{instance.name}</h1>
                         <p className='description' style={{marginBottom:'8px'}}>{instance.des}</p>
                         <div id="progressDiv">

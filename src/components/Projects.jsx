@@ -8,14 +8,14 @@ export default function Projects() {
 				{projects.map((instance, index) =>{
 						return(
 							<child>
-								<div><img src={instance.image} alt="" /></div>
+								<div><img src={instance.image} alt="imageOfProject" /></div>
 								<info>
 									<icons>
-										{instance.icons.map((icon, index) => <img src={icon} height="40px" alt={`image-${index}`} />)}
+										{instance.icons.map((icon, index) => <img src={icon} height="40px" alt={`imageOfLang`} />)}
 									</icons>
 									<h1>{instance.name}</h1>
 									<p>{instance.des}</p>
-								<button><a href={instance.link} target='_blank'>View Project</a></button>
+								<button><a href={instance.link} target='_blank' rel="noreferrer" >View Project</a></button>
 								</info>
 							</child>
 						)

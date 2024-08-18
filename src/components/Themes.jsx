@@ -1,53 +1,30 @@
 import React, { useState, useEffect } from 'react';
 
-{/* <input 
-    className="" 
-    type="color" 
-    onChange={this.changeTheme.bind(this)}
-    style={{"--base":this.state.color}}
-/> */}
-
-// /* Royal Blue ----------------------------------*/
-//     /* --primary-color: #4169E1; 
-//     --accent-color: #FFD700;
-//     --background-color: #F0F0F0; 
-//     --text-color: #333333;  */
-
-//   /* Navy Blue and Orange----------------------- */
-//     /* --primary-color: #001F3F;
-//     --accent-color: #FF851B;
-//     --background-color: #FFFFFF;
-//     --text-color: #000000; */
-
-//   /* Teal and Coral ----------------------------*/
-//   /* --primary-color: #008080;
-//   --accent-color: #FF7F50;
-//   --background-color: #E0FFFF;
-//   --text-color: #2F4F4F; */
-
-//   /* Dark Purple and Mint Green */
-//   /* --primary-color: #4B0082;
-//   --accent-color: #98FF98;
-//   --background-color: #FFFFF0;
-//   --text-color: #000000; */
-
-//   /* Charcoal and Turquoise */
-//   --primary-color: #36454F;
-//   --accent-color: #40E0D0;
-//   --background-color: #D3D3D3;
-//   --text-color: #FFFFFF;
-
-
-// CHANGE TO Const
-
 export default function Themes() {
-  const [theme, setTheme] = useState({
-    primaryColor: "#36454F",
-    accentColor: "#40E0D0",
-    backgroundColor: "#D3D3D3",
-    textColor: "#FFFFFF",
-  });
 
+  const [theme, setTheme] = useState({primaryColor: "#36454F", accentColor: "#40E0D0", backgroundColor: "#D3D3D3", textColor: "#FFFFFF"});
+  
+  const buttons=[
+    {
+        name: "DPMG",
+        title: "Dark Purple and Mint Green",
+    },
+    {
+        name: "NBO",
+        title: "Night Blue and Orange",
+    },
+    {
+        name: "TC",
+        title: "Teal and Coral",
+    },
+    {
+        name: "RB",
+        title: "Royal Blue",
+    },
+    {
+        name: "CT",
+        title: "Charcoal and Turquoise",
+    }]
   function themeChange(str) {
     switch (str) {
       case "RB":
@@ -99,34 +76,9 @@ export default function Themes() {
     root.style.setProperty('--background-color', theme.backgroundColor);
     root.style.setProperty('--text-color', theme.textColor);
   }, [theme]);
-  const buttons=[
-    {
-        name: "DPMG",
-        title: "Dark Purple and Mint Green",
-    },
-    {
-        name: "NBO",
-        title: "Night Blue and Orange",
-    },
-    {
-        name: "TC",
-        title: "Teal and Coral",
-    },
-    {
-        name: "RB",
-        title: "Royal Blue",
-    },
-    {
-        name: "CT",
-        title: "Charcoal and Turquoise",
-    }]
+  
   return (
     <div className='themes'>
-      {/* <button onClick={() => themeChange("DPMG")}>Dark Purple and Mint Green </button>
-      <button onClick={() => themeChange("NBO")} >Night Blue and Orange </button>
-      <button onClick={() => themeChange("TC")} >Teal and Coral</button>
-      <button onClick={() => themeChange("RB")} >Royal Blue</button>
-      <button onClick={()=>themeChange("CT")}>Charcoal and Turquoise</button> */}
         {buttons.map((butt, index) => (
             <button key={index} onClick={() => themeChange(butt.name)} className={`number${index}`}>
             

@@ -168,7 +168,9 @@ b {
   .wave {
     transform: translateY(10%) !important;
   }
-
+  icons{
+    justify-content: center;
+  }
   .loadingbackground > img {
     position: absolute;
     left: 20% !important;
@@ -428,10 +430,9 @@ info>p>strong{
 }
 icons{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
-  overflow: visible;
+  flex-wrap: wrap;
   img{
     /* border-radius: 50%; */
     /* mix-blend-mode: multiply; */
@@ -447,6 +448,7 @@ icons{
 /*------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width:500px) {
+  
   .loadingbackground>img{
     position: absolute;
     left: 20% !important;
@@ -555,7 +557,11 @@ icons{
       flex-direction: column;
       align-items: center; 
       margin-bottom: 10%;
+      
     }
+  }
+  icons{
+    justify-content: center;
   }
   .description{
     height: fit-content;
