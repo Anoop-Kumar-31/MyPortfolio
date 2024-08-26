@@ -4,11 +4,11 @@ import { BsFillSendArrowUpFill } from "react-icons/bs";
 import { VscGithub } from "react-icons/vsc";
 export default function Contacts() {
   const handleEmailClick = () => {
-    console.log("Email triggered");
+    // console.log("Email triggered");
     window.location.href = `https://mail.google.com/mail?view=cm&fs=1&to=amt312002@gmail.com&su=Visited your portfolio`;
   };
   return (
-    <div className="contact">
+    <div className="contact" id="contactSection">
       <b style={{ fontSize: '10vh' }}>Contacts</b>
       <hr />
       <br />
