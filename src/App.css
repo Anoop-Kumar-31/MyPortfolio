@@ -705,7 +705,15 @@ icons img{
   100%{transform: translate(0,0);}
 }
 
-
+.insideContact{
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  gap: 10px;
+}
+.insideContact img{
+  height: 150px;
+}
 .contact{
   margin-top: 10vh;
   padding: 3vh 5vw;
