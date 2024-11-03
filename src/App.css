@@ -586,6 +586,10 @@ icons img{
     height: fit-content;
     margin-bottom: 20px !important;
   }
+  #aboutmeinfo{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .skillbox{
   width: clamp(200px,80%,720px); 
@@ -774,7 +778,6 @@ icons img{
 }
 
 #aboutmeinfo button {
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
