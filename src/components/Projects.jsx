@@ -16,6 +16,7 @@ export default function Projects() {
 									<h1>{instance.name}</h1>
 									<p>{instance.des}</p>
 								<button><a href={instance.link} target='_blank' rel="noreferrer" >View Project</a></button>
+								<button><a href={instance.code} target='_blank' rel="noreferrer" >Git Repository</a></button>
 								</info>
 							</child>
 						)

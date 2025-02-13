@@ -430,6 +430,11 @@ info>p>strong{
     color: var(--primary-color);
     text-shadow: var(--accent-color) 1px 1px 1px;
 }
+info>button{
+  margin-right: 25px;
+  width: fit-content;
+  padding: 12.5px 35px;
+}
 icons{
   display: flex;
   /* align-items: center; */
@@ -577,7 +582,13 @@ icons img{
     align-items: center;
     margin-bottom: 10%;
   }
-
+  info>button:first-of-type{
+    margin-top:50px;
+  }
+  info>button{
+    width: 50%;
+    margin: 10px 0;
+  }
   icons {
     justify-content: center;
   }
