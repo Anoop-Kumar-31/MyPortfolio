@@ -601,6 +601,26 @@ icons img{
     display: flex;
     flex-direction: column;
   }
+  .insideContact{
+    flex-direction: column;
+  }
+  .insideContact section:last-of-type{
+    flex-direction: column;
+  }
+  .insideContact img{
+    width: auto;
+    height: 35vh !important;
+  }
+  .insideContact h1{
+    text-align: center;
+  }
+  #myLinks{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
 }
 .skillbox{
   width: clamp(200px,80%,720px); 
